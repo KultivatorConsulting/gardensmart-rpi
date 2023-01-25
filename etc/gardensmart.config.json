@@ -1,0 +1,51 @@
+{
+  "topicCommands": "/gardensmart/commands",
+  "topicIrrigators": "/gardensmart/zones/irrigators",
+  "topicZones": "/gardensmart/zones",
+  "broker": {
+    "host": "s04.kultivator.net.nz",
+    "port": 8883,
+    "username": "irrigator",
+    "password": "a_good_password",
+    "clientId": "python-mqtt-0",
+    "caCerts": "/opt/gardensmart/certs/ca.crt",
+    "certFile": "/opt/gardensmart/certs/client.crt",
+    "keyFile": "/opt/gardensmart/certs/client.key"
+  },
+  "irrigatorService": {
+    "zones": [
+      {
+        "id": 0,
+        "name": "Vegetable Garden",
+        "garden": "Backyard",
+        "description": "Raised vegetable patches.",
+        "relayId": 1,
+        "flowRateGpioPin": 0
+      },
+      {
+        "id": 1,
+        "name": "Citrus Gardens",
+        "garden": "Backyard",
+        "description": "Lemon tree and gardens alongside the office.",
+        "relayId": 2,
+        "flowRateGpioPin": 0
+      },
+      {
+        "id": 2,
+        "name": "Fruit Garden",
+        "garden": "Backyard",
+        "description": "Back garden fruiting bushes.",
+        "relayId": 3,
+        "flowRateGpioPin": 0
+      },
+      {
+        "id": 3,
+        "name": "Backyard Lawn",
+        "garden": "Backyard",
+        "description": "Backyard lawns.",
+        "relayId": 4,
+        "flowRateGpioPin": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=GardenSmart Irrigator service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /opt/gardensmart/gs_irrigator.py
+
+[Install]
+WantedBy=multi-user.target
