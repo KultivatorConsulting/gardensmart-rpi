@@ -9,7 +9,7 @@ import time
 from paho.mqtt import client as mqtt_client
 
 from state_store import StateStore
-from relay_lib_seeed import *
+from relay_driver import *
 
 exe_dir = os.path.dirname(__file__)
 
